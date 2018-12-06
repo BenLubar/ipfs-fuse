@@ -30,7 +30,8 @@ func lookupIPFS(inode *nodefs.Inode, out *fuse.Attr, name string, ctx *fuse.Cont
 
 	var entries *UnixFSList
 	out.Size = stat.Size
-	out.Blocks = uint64(stat.Blocks)
+	out.Blocks = out.Size
+	out.Blksize = 1
 	out.Mode = 0444
 	if stat.Type == "directory" {
 		out.Mode |= 0111 | fuse.S_IFDIR

@@ -30,6 +30,8 @@ func (n *UnixFSNode) Lookup(out *fuse.Attr, name string, ctx *fuse.Context) (*no
 	}
 
 	out.Size = stat.Size
+	out.Blocks = out.Size
+	out.Blksize = 1
 	out.Mode = 0644
 	if stat.Type == "directory" {
 		out.Mode |= fuse.S_IFDIR | 0111
@@ -56,6 +58,12 @@ func (n *UnixFSNode) OpenDir(ctx *fuse.Context) ([]fuse.DirEntry, fuse.Status) {
 	}
 	if len(list.Entries) == 1 && list.Entries[0].Name == "" {
 		return nil, fuse.ENOTDIR
+	}
+
+	if !n.Inode().IsDir() {
+		p, name := n.Inode().Parent()
+		p.RmChild(name)
+		n.SetInode(p.NewChild(name, true, n))
 	}
 
 	existing := n.Inode().Children()

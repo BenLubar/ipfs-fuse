@@ -56,7 +56,8 @@ func (n *IPFSNode) GetAttr(out *fuse.Attr, file nodefs.File, ctx *fuse.Context) 
 		out.Size = n.Stat.Size
 	}
 
-	out.Blocks = uint64(n.Stat.Blocks)
+	out.Blocks = out.Size
+	out.Blksize = 1
 
 	return fuse.OK
 }
