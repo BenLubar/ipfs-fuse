@@ -23,11 +23,9 @@ func main() {
 	ipnsRoot = &IPNSRootNode{Node: nodefs.NewDefaultNode()}
 
 	opts := nodefs.NewOptions()
-	opts.Debug = true
 	conn := nodefs.NewFileSystemConnector(ufsRoot, opts)
 	server, err := fuse.NewServer(conn.RawFS(), *flagMountPoint, &fuse.MountOptions{
 		AllowOther:           true,
-		Debug:                true,
 		FsName:               "ipfs",
 		IgnoreSecurityLabels: true,
 	})
