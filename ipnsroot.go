@@ -13,19 +13,19 @@ type IPNSRootNode struct {
 }
 
 func (n *IPNSRootNode) Lookup(out *fuse.Attr, name string, ctx *fuse.Context) (*nodefs.Inode, fuse.Status) {
-	hash, err := Resolve(context.TODO(), name)
+	dest, err := Resolve(context.TODO(), name)
 	if err != nil {
 		log.Println("Lookup", "/ipns/"+name, err)
 		return nil, fuse.EIO
 	}
-	if hash == "" {
+	if dest == "" {
 		return nil, fuse.ENOENT
 	}
 
 	out.Mode = 0444 | fuse.S_IFLNK
 	return n.Inode().NewChild(name, false, &IPNSNode{
 		Node: nodefs.NewDefaultNode(),
-		Hash: hash,
+		Dest: dest,
 	}), fuse.OK
 }
 func (n *IPNSRootNode) OpenDir(ctx *fuse.Context) ([]fuse.DirEntry, fuse.Status) {

@@ -5,7 +5,6 @@ import (
 	"context"
 	"mime/multipart"
 	pathutil "path"
-	"strings"
 
 	shell "github.com/ipfs/go-ipfs-api"
 )
@@ -157,14 +156,14 @@ func Resolve(ctx context.Context, name string) (string, error) {
 	var data struct {
 		Path string
 	}
-	if err := ipfs.Request("resolve", "/ipns/"+name).Option("recursive", true).Exec(ctx, &data); err != nil {
+	if err := ipfs.Request("resolve", "/ipns/"+name).Exec(ctx, &data); err != nil {
 		if ie, ok := err.(*shell.Error); ok && ie.Message == "file does not exist" {
 			// Not Found
 			return "", nil
 		}
 		return "", err
 	}
-	return strings.TrimPrefix(data.Path, "/ipfs/"), nil
+	return data.Path, nil
 }
 
 func attachFile(builder *shell.RequestBuilder, data []byte) *shell.RequestBuilder {

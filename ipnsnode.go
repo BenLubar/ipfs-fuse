@@ -7,11 +7,11 @@ import (
 
 type IPNSNode struct {
 	nodefs.Node
-	Hash string
+	Dest string
 }
 
 func (n *IPNSNode) Readlink(ctx *fuse.Context) ([]byte, fuse.Status) {
-	return []byte("../ipfs/" + n.Hash), fuse.OK
+	return []byte(".." + n.Dest), fuse.OK
 }
 
 func (n *IPNSNode) GetAttr(out *fuse.Attr, file nodefs.File, ctx *fuse.Context) fuse.Status {
