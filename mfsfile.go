@@ -37,7 +37,7 @@ func (f *UnixFSFile) Read(dest []byte, off int64) (fuse.ReadResult, fuse.Status)
 }
 
 func (f *UnixFSFile) Write(data []byte, off int64) (uint32, fuse.Status) {
-	resp, err := attachFile(ipfs.Request("files/write", f.Node.Path), data).Option("flush", false).Option("offset", off).Send(context.TODO())
+	resp, err := attachFile(ipfs.Request("files/write", f.Node.Path), data).Option("flush", false).Option("offset", off).Option("raw-leaves", true).Send(context.TODO())
 	if err == nil {
 		err = resp.Close()
 	}
@@ -75,7 +75,7 @@ func (f *UnixFSFile) Fsync(flags int) fuse.Status {
 
 func (f *UnixFSFile) Truncate(size uint64) fuse.Status {
 	if size == 0 {
-		resp, err := attachFile(ipfs.Request("files/write", f.Node.Path), nil).Option("flush", false).Option("truncate", true).Send(context.TODO())
+		resp, err := attachFile(ipfs.Request("files/write", f.Node.Path), nil).Option("flush", false).Option("truncate", true).Option("raw-leaves", true).Send(context.TODO())
 		if err == nil {
 			err = resp.Close()
 		}
