@@ -44,6 +44,8 @@ func lookupIPFS(inode *nodefs.Inode, out *fuse.Attr, name string, ctx *fuse.Cont
 			inode.RmChild(path.Base(name))
 			return nil, fuse.ENOENT
 		}
+		out.Size = uint64(len(entries.Entries))
+		out.Blocks = out.Size
 	} else if stat.Type == "file" {
 		out.Mode |= fuse.S_IFREG
 	}
