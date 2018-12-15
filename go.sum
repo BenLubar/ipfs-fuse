@@ -17,6 +17,7 @@ github.com/gxed/hashland v0.0.0-20180221191214-d9f6b97f8db2 h1:neM/RzmgBKxsJ3ioE
 github.com/gxed/hashland v0.0.0-20180221191214-d9f6b97f8db2/go.mod h1:YUhWml1NaWLTNBl4NPptkB8MadfaIhgq+a2TRc+Mw4Q=
 github.com/hanwen/go-fuse v0.0.0-20181027161220-c029b69a13a7 h1:+INF0+TK4ga3O+6Y0Z2ftiujA13KaCO/+kHN9V6Mj4A=
 github.com/hanwen/go-fuse v0.0.0-20181027161220-c029b69a13a7/go.mod h1:unqXarDXqzAk0rt98O2tVndEPIpUgLD9+rwFisZH3Ok=
+github.com/hanwen/go-fuse v0.0.0-20181215090137-7954c2167d2a/go.mod h1:unqXarDXqzAk0rt98O2tVndEPIpUgLD9+rwFisZH3Ok=
 github.com/ipfs/go-ipfs-api v1.3.3-0.20181127203449-f821c1fe09cb h1:hAU6UhMI0e7jFx+arpWJkkYimNwZe+ZCrJxgUakPXWU=
 github.com/ipfs/go-ipfs-api v1.3.3-0.20181127203449-f821c1fe09cb/go.mod h1:YWGjU+7Bdls1CpvsKsV6EsQ/KMyQqSpBru2hme/5WQg=
 github.com/ipfs/go-ipfs-api v1.3.5 h1:NvOdNXkN1S9XiaRlpPV8SUOBKcRVlpUhoHgbDteMs60=
