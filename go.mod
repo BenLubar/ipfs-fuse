@@ -3,7 +3,7 @@ module github.com/BenLubar/ipfs-fuse
 require (
 	github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412 // indirect
 	github.com/btcsuite/btcd v0.0.0-20181130015935-7d2daa5bfef2 // indirect
-	github.com/gogo/protobuf v1.1.1 // indirect
+	github.com/gogo/protobuf v1.2.0 // indirect
 	github.com/gxed/hashland v0.0.0-20180221191214-d9f6b97f8db2 // indirect
 	github.com/hanwen/go-fuse v0.0.0-20181215090137-7954c2167d2a
 	github.com/ipfs/go-ipfs-api v1.3.3-0.20181127203449-f821c1fe09cb

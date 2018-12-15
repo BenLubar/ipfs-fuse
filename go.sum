@@ -13,6 +13,7 @@ github.com/btcsuite/winsvc v1.0.0/go.mod h1:jsenWakMcC0zFBFurPLEAyrnc/teJEM1O46f
 github.com/davecgh/go-spew v0.0.0-20171005155431-ecdeabc65495/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/gogo/protobuf v1.1.1 h1:72R+M5VuhED/KujmZVcIquuo8mBgX4oVda//DQb3PXo=
 github.com/gogo/protobuf v1.1.1/go.mod h1:r8qH/GZQm5c6nD/R0oafs1akxWv10x8SbQlK7atdtwQ=
+github.com/gogo/protobuf v1.2.0/go.mod h1:r8qH/GZQm5c6nD/R0oafs1akxWv10x8SbQlK7atdtwQ=
 github.com/gxed/hashland v0.0.0-20180221191214-d9f6b97f8db2 h1:neM/RzmgBKxsJ3ioEZnIQmgQQq/sn6xDqYOEYnH3RYM=
 github.com/gxed/hashland v0.0.0-20180221191214-d9f6b97f8db2/go.mod h1:YUhWml1NaWLTNBl4NPptkB8MadfaIhgq+a2TRc+Mw4Q=
 github.com/hanwen/go-fuse v0.0.0-20181027161220-c029b69a13a7 h1:+INF0+TK4ga3O+6Y0Z2ftiujA13KaCO/+kHN9V6Mj4A=
