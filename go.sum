@@ -26,6 +26,7 @@ github.com/ipfs/go-ipfs-cmdkit v1.1.3 h1:4sbEnLjYmh8gJOCUiqtKp0EIboSYTFrxftc7S+U
 github.com/ipfs/go-ipfs-cmdkit v1.1.3/go.mod h1:9FtbMdUabcSqv/G4/8WCxSLxkZxn/aZEFrxxqnVcRbg=
 github.com/ipfs/go-ipfs-files v0.0.0-20181017153806-90d206a6f394 h1:BmWH1Bu/AObYs30UEs7IANbI4vLEu2MZ+z2Gu2MfS9Q=
 github.com/ipfs/go-ipfs-files v0.0.0-20181017153806-90d206a6f394/go.mod h1:6m71fxPZM2eOasRmgz6ryrSpTkriYsggu2Cnv2cu+jA=
+github.com/ipfs/go-ipfs-files v0.0.0-20181215090203-86b2cb84da86/go.mod h1:6m71fxPZM2eOasRmgz6ryrSpTkriYsggu2Cnv2cu+jA=
 github.com/jessevdk/go-flags v0.0.0-20141203071132-1679536dcc89/go.mod h1:4FA24M0QyGHXBuZZK/XkWh8h0e1EYbRYJSGM75WSRxI=
 github.com/jrick/logrotate v1.0.0/go.mod h1:LNinyqDIJnpAur+b8yyulnQw/wDuN1+BYKlTRt3OuAQ=
 github.com/kkdai/bstream v0.0.0-20161212061736-f391b8402d23/go.mod h1:J+Gs4SYgM6CZQHDETBtE9HaSEkGmuNXF86RwHhHUvq4=
