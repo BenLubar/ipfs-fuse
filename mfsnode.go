@@ -282,6 +282,9 @@ func (n *UnixFSNode) Mknod(name string, mode uint32, dev uint32, ctx *fuse.Conte
 		// only allow regular files
 		return nil, fuse.ENODEV
 	}
+	if mode&^0777 == fuse.S_IFDIR {
+		return n.Mkdir(name, mode, ctx)
+	}
 	if mode&^0777 != fuse.S_IFREG {
 		return nil, fuse.EINVAL
 	}
