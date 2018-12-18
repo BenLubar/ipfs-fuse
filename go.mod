@@ -25,5 +25,5 @@ require (
 	github.com/spaolacci/murmur3 v0.0.0-20180118202830-f09979ecbc72 // indirect
 	github.com/whyrusleeping/tar-utils v0.0.0-20180509141711-8c6c8ba81d5c // indirect
 	golang.org/x/crypto v0.0.0-20181203042331-505ab145d0a9 // indirect
-	golang.org/x/sys v0.0.0-20181215104149-4d1cda033e06 // indirect
+	golang.org/x/sys v0.0.0-20181218204311-074acd46bca6 // indirect
 )
