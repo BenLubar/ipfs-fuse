@@ -6,7 +6,7 @@ require (
 	github.com/cheekybits/is v0.0.0-20150225183255-68e9c0620927 // indirect
 	github.com/gogo/protobuf v1.2.0 // indirect
 	github.com/gxed/hashland v0.0.0-20180221191214-d9f6b97f8db2 // indirect
-	github.com/hanwen/go-fuse v0.0.0-20181215090137-7954c2167d2a
+	github.com/hanwen/go-fuse v0.0.0-20181217160426-f520193c2228
 	github.com/ipfs/go-ipfs-api v1.3.5
 	github.com/ipfs/go-ipfs-cmdkit v1.1.3 // indirect
 	github.com/libp2p/go-flow-metrics v0.2.0 // indirect
@@ -25,5 +25,5 @@ require (
 	github.com/spaolacci/murmur3 v0.0.0-20180118202830-f09979ecbc72 // indirect
 	github.com/whyrusleeping/tar-utils v0.0.0-20180509141711-8c6c8ba81d5c // indirect
 	golang.org/x/crypto v0.0.0-20181203042331-505ab145d0a9 // indirect
-	golang.org/x/sys v0.0.0-20181215104149-4d1cda033e06 // indirect
+	golang.org/x/sys v0.0.0-20181218192612-074acd46bca6 // indirect
 )
