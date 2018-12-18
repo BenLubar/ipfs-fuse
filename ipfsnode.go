@@ -47,6 +47,9 @@ func (n *IPFSNode) OpenDir(ctx *fuse.Context) ([]fuse.DirEntry, fuse.Status) {
 }
 
 func (n *IPFSNode) GetAttr(out *fuse.Attr, file nodefs.File, ctx *fuse.Context) fuse.Status {
+	out.Mtime = 1
+	out.Ctime = 1
+
 	out.Mode = 0444
 	if n.Entries != nil {
 		out.Mode |= 0111 | fuse.S_IFDIR

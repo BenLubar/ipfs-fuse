@@ -29,6 +29,8 @@ func (n *UnixFSNode) Lookup(out *fuse.Attr, name string, ctx *fuse.Context) (*no
 		return nil, fuse.ENOENT
 	}
 
+	out.Mtime = 1
+	out.Ctime = 1
 	out.Size = stat.Size
 	out.Blocks = out.Size
 	out.Blksize = 1
@@ -107,6 +109,8 @@ func (n *UnixFSNode) GetAttr(out *fuse.Attr, file nodefs.File, ctx *fuse.Context
 		return fuse.ENOENT
 	}
 
+	out.Mtime = 1
+	out.Ctime = 1
 	out.Size = stat.Size
 	out.Mode = 0644
 	if stat.Type == "directory" {

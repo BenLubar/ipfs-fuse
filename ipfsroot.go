@@ -29,6 +29,8 @@ func lookupIPFS(inode *nodefs.Inode, out *fuse.Attr, name string, ctx *fuse.Cont
 	}
 
 	var entries *UnixFSList
+	out.Mtime = 1
+	out.Ctime = 1
 	out.Size = stat.Size
 	out.Blocks = out.Size
 	out.Blksize = 1
