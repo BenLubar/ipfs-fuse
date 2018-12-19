@@ -49,6 +49,7 @@ github.com/mr-tron/base58 v1.1.0 h1:Y51FGVJ91WBqCEabAi5OPUz38eAx8DakuAm5svLcsfQ=
 github.com/mr-tron/base58 v1.1.0/go.mod h1:xcD2VGqlgYjBdcBLw+TuYLr8afG+Hj8g2eTVqeSzSU8=
 github.com/multiformats/go-multiaddr v1.3.0 h1:qv23SBIX9ayNNoGuPFp26xW9cFl3gR4iRXEGFt86aRc=
 github.com/multiformats/go-multiaddr v1.3.0/go.mod h1:1JAWc2R8uiQTLrCHI/lmOkXYu5B8025fQbZjq8//YgY=
+github.com/multiformats/go-multiaddr v1.4.0/go.mod h1:1JAWc2R8uiQTLrCHI/lmOkXYu5B8025fQbZjq8//YgY=
 github.com/multiformats/go-multiaddr-net v1.6.3 h1:Who/zy46KcaQjgGqT8hXEtBHnWAWHk33eqqQte+nhW8=
 github.com/multiformats/go-multiaddr-net v1.6.3/go.mod h1:AO4WqKzxLt+paJ0N0kufj6teQ2R6fZbnItDvGTwilmk=
 github.com/multiformats/go-multihash v1.0.8 h1:pyowaBSivNxBr137ZjYkr0q4o41MKSJVPKuO7F7AAfY=

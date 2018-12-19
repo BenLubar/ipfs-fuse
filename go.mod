@@ -19,7 +19,7 @@ require (
 	github.com/minio/sha256-simd v0.0.0-20181005183134-51976451ce19 // indirect
 	github.com/mitchellh/go-homedir v1.0.0 // indirect
 	github.com/mr-tron/base58 v1.1.0 // indirect
-	github.com/multiformats/go-multiaddr v1.3.0 // indirect
+	github.com/multiformats/go-multiaddr v1.4.0 // indirect
 	github.com/multiformats/go-multiaddr-net v1.6.3 // indirect
 	github.com/multiformats/go-multihash v1.0.8 // indirect
 	github.com/spaolacci/murmur3 v0.0.0-20180118202830-f09979ecbc72 // indirect
