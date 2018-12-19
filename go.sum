@@ -51,6 +51,7 @@ github.com/multiformats/go-multiaddr v1.3.0 h1:qv23SBIX9ayNNoGuPFp26xW9cFl3gR4iR
 github.com/multiformats/go-multiaddr v1.3.0/go.mod h1:1JAWc2R8uiQTLrCHI/lmOkXYu5B8025fQbZjq8//YgY=
 github.com/multiformats/go-multiaddr-net v1.6.3 h1:Who/zy46KcaQjgGqT8hXEtBHnWAWHk33eqqQte+nhW8=
 github.com/multiformats/go-multiaddr-net v1.6.3/go.mod h1:AO4WqKzxLt+paJ0N0kufj6teQ2R6fZbnItDvGTwilmk=
+github.com/multiformats/go-multiaddr-net v1.7.1/go.mod h1:AO4WqKzxLt+paJ0N0kufj6teQ2R6fZbnItDvGTwilmk=
 github.com/multiformats/go-multihash v1.0.8 h1:pyowaBSivNxBr137ZjYkr0q4o41MKSJVPKuO7F7AAfY=
 github.com/multiformats/go-multihash v1.0.8/go.mod h1:sT17phG+xVgnrZc8ht/ZoCIV0sKRwvmZkXk46UfSxM4=
 github.com/spaolacci/murmur3 v0.0.0-20180118202830-f09979ecbc72 h1:qLC7fQah7D6K1B0ujays3HV9gkFtllcxhzImRR7ArPQ=
