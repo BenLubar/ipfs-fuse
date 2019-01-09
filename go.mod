@@ -14,7 +14,7 @@ require (
 	github.com/libp2p/go-libp2p-metrics v2.1.7+incompatible // indirect
 	github.com/libp2p/go-libp2p-peer v2.4.0+incompatible // indirect
 	github.com/libp2p/go-libp2p-protocol v1.0.0 // indirect
-	github.com/libp2p/go-libp2p-pubsub v0.10.2 // indirect
+	github.com/libp2p/go-libp2p-pubsub v0.11.10 // indirect
 	github.com/minio/blake2b-simd v0.0.0-20160723061019-3f5f724cb5b1 // indirect
 	github.com/minio/sha256-simd v0.0.0-20181005183134-51976451ce19 // indirect
 	github.com/mitchellh/go-homedir v1.0.0 // indirect
