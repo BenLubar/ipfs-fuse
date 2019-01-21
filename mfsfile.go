@@ -46,7 +46,7 @@ func (f *UnixFSFile) Write(data []byte, off int64) (uint32, fuse.Status) {
 	}
 
 	if err != nil {
-		log.Println("Write", f.Node.Path)
+		log.Println("Write", f.Node.Path, err)
 		return 0, fuse.EIO
 	}
 
@@ -71,27 +71,6 @@ func (f *UnixFSFile) Flush() fuse.Status {
 
 func (f *UnixFSFile) Fsync(flags int) fuse.Status {
 	return f.Flush()
-}
-
-func (f *UnixFSFile) Truncate(size uint64) fuse.Status {
-	if size == 0 {
-		resp, err := attachFile(ipfs.Request("files/write", f.Node.Path), nil).Option("flush", false).Option("truncate", true).Option("raw-leaves", true).Send(context.TODO())
-		if err == nil {
-			err = resp.Close()
-		}
-		if err == nil && resp.Error != nil {
-			err = resp.Error
-		}
-
-		if err != nil {
-			log.Println("Truncate", f.Node.Path)
-			return fuse.EIO
-		}
-
-		return fuse.OK
-	}
-
-	return fuse.ENOSYS
 }
 
 func (f *UnixFSFile) GetAttr(out *fuse.Attr) fuse.Status {

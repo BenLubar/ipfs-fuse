@@ -294,7 +294,7 @@ func (n *UnixFSNode) Mknod(name string, mode uint32, dev uint32, ctx *fuse.Conte
 	}
 
 	childPath := path.Join(n.Path, name)
-	resp, err := attachFile(ipfs.Request("files/write", childPath), nil).Option("create", true).Option("flush", false).Send(context.TODO())
+	resp, err := ipfs.Request("files/cp", "/ipfs/z2yYDV", childPath).Option("flush", false).Send(context.TODO())
 	if err == nil {
 		err = resp.Close()
 	}
