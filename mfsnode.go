@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"io/ioutil"
 	"log"
 	"path"
 	"strings"
@@ -317,5 +318,56 @@ func (n *UnixFSNode) Mknod(name string, mode uint32, dev uint32, ctx *fuse.Conte
 
 func (n *UnixFSNode) Utimens(file nodefs.File, atime *time.Time, mtime *time.Time, ctx *fuse.Context) fuse.Status {
 	// We don't have timestamps, so just ignore the system call.
+	return fuse.OK
+}
+
+func (n *UnixFSNode) Truncate(file nodefs.File, size uint64, ctx *fuse.Context) fuse.Status {
+	if size == 0 {
+		return n.rewrite(nil, ctx)
+	}
+
+	resp, err := ipfs.Request("files/read", n.Path).Option("flush", false).Send(context.TODO())
+	if err == nil && resp.Error != nil {
+		err = resp.Error
+	}
+	if err != nil {
+		log.Println("Truncate", n.Path, size, err)
+		return fuse.EIO
+	}
+
+	b, err := ioutil.ReadAll(resp.Output)
+	if e := resp.Close(); err == nil {
+		err = e
+	}
+	if err != nil {
+		log.Println("Truncate", n.Path, size, err)
+		return fuse.EIO
+	}
+
+	if l := uint64(len(b)); l == size {
+		return fuse.OK
+	} else if l > size {
+		b = b[:size]
+	} else {
+		b = append(b, make([]byte, size-l)...)
+	}
+
+	return n.rewrite(b, ctx)
+}
+
+func (n *UnixFSNode) rewrite(b []byte, ctx *fuse.Context) fuse.Status {
+	resp, err := attachFile(ipfs.Request("files/write", n.Path), b).Option("flush", false).Option("raw-leaves", true).Option("truncate", true).Send(context.TODO())
+	if err == nil {
+		err = resp.Close()
+	}
+	if err == nil && resp.Error != nil {
+		err = resp.Error
+	}
+
+	if err != nil {
+		log.Println("Truncate", n.Path, err)
+		return fuse.EIO
+	}
+
 	return fuse.OK
 }

@@ -76,3 +76,7 @@ func (f *UnixFSFile) Fsync(flags int) fuse.Status {
 func (f *UnixFSFile) GetAttr(out *fuse.Attr) fuse.Status {
 	return f.Node.GetAttr(out, f, &fuse.Context{})
 }
+
+func (f *UnixFSFile) Truncate(size uint64) fuse.Status {
+	return f.Node.Truncate(f, size, &fuse.Context{})
+}
