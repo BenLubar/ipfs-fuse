@@ -316,6 +316,14 @@ func (n *UnixFSNode) Mknod(name string, mode uint32, dev uint32, ctx *fuse.Conte
 	}), fuse.OK
 }
 
+func (n *UnixFSNode) Chmod(file nodefs.File, perms uint32, context *fuse.Context) (code fuse.Status) {
+	// We don't have modes, so just ignore the system call.
+	return fuse.OK
+}
+func (n *UnixFSNode) Chown(file nodefs.File, uid uint32, gid uint32, context *fuse.Context) (code fuse.Status) {
+	// We don't have owners, so just ignore the system call.
+	return fuse.OK
+}
 func (n *UnixFSNode) Utimens(file nodefs.File, atime *time.Time, mtime *time.Time, ctx *fuse.Context) fuse.Status {
 	// We don't have timestamps, so just ignore the system call.
 	return fuse.OK
