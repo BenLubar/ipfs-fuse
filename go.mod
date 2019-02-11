@@ -8,7 +8,7 @@ require (
 	github.com/hanwen/go-fuse v0.0.0-20190111173210-425e8d5301f6
 	github.com/ipfs/go-ipfs-api v1.3.5
 	github.com/ipfs/go-ipfs-cmdkit v1.1.3 // indirect
-	github.com/ipfs/go-ipfs-files v0.0.0-20181213224250-86b2cb84da86 // indirect
+	github.com/ipfs/go-ipfs-files v0.0.0-20190211194203-b9ab59872849 // indirect
 	github.com/libp2p/go-flow-metrics v0.2.0 // indirect
 	github.com/libp2p/go-libp2p-crypto v2.0.1+incompatible // indirect
 	github.com/libp2p/go-libp2p-metrics v2.1.7+incompatible // indirect
