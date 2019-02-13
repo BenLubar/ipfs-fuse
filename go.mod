@@ -10,7 +10,7 @@ require (
 	github.com/ipfs/go-ipfs-cmdkit v1.1.3 // indirect
 	github.com/ipfs/go-ipfs-files v0.0.0-20181213224250-86b2cb84da86 // indirect
 	github.com/libp2p/go-flow-metrics v0.2.0 // indirect
-	github.com/libp2p/go-libp2p-crypto v2.0.1+incompatible // indirect
+	github.com/libp2p/go-libp2p-crypto v2.0.5 // indirect
 	github.com/libp2p/go-libp2p-metrics v2.1.7+incompatible // indirect
 	github.com/libp2p/go-libp2p-peer v2.4.0+incompatible // indirect
 	github.com/libp2p/go-libp2p-protocol v1.0.0 // indirect

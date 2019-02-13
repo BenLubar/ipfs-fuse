@@ -36,6 +36,8 @@ github.com/libp2p/go-flow-metrics v0.2.0 h1:GAJSg/g+xLuc7vz0RN96pRA9q/n5b5+Hs6Sn
 github.com/libp2p/go-flow-metrics v0.2.0/go.mod h1:Iv1GH0sG8DtYN3SVJ2eG221wMiNpZxBdp967ls1g+k8=
 github.com/libp2p/go-libp2p-crypto v2.0.1+incompatible h1:JAnZYupeAsZI5UqX50N9MWAVNO5HIfkow249YcmuvVs=
 github.com/libp2p/go-libp2p-crypto v2.0.1+incompatible/go.mod h1:WHpT3tvhh7GM2INNJhQBuI6J+5z/o3QI0lTF5UVjppk=
+github.com/libp2p/go-libp2p-crypto v2.0.5+incompatible h1:XVZ7JguuAuxfZ+MAbHsaKs508zRlAc7bGu65xKpxxns=
+github.com/libp2p/go-libp2p-crypto v2.0.5+incompatible/go.mod h1:WHpT3tvhh7GM2INNJhQBuI6J+5z/o3QI0lTF5UVjppk=
 github.com/libp2p/go-libp2p-metrics v2.1.7+incompatible h1:daZgPZley96uWijqkfphS+EjNgj+wkMaNZA7Ie/O0t8=
 github.com/libp2p/go-libp2p-metrics v2.1.7+incompatible/go.mod h1:ko4lRyuvbgwwxD2TJvt2RHONahjJlkn6l7L/iEbJBf0=
 github.com/libp2p/go-libp2p-peer v2.4.0+incompatible h1:1THIuO/h7GuITklYS7RgGCyoVl8aP9XH4NcokcdhDZc=
@@ -48,6 +50,8 @@ github.com/minio/blake2b-simd v0.0.0-20160723061019-3f5f724cb5b1 h1:lYpkrQH5ajf0
 github.com/minio/blake2b-simd v0.0.0-20160723061019-3f5f724cb5b1/go.mod h1:pD8RvIylQ358TN4wwqatJ8rNavkEINozVn9DtGI3dfQ=
 github.com/minio/sha256-simd v0.0.0-20190117184323-cc1980cb0338 h1:USW1+zAUkUSvk097CAX/i8KR3r6f+DHNhk6Xe025Oyw=
 github.com/minio/sha256-simd v0.0.0-20190117184323-cc1980cb0338/go.mod h1:2FMWW+8GMoPweT6+pI63m9YE3Lmw4J71hV56Chs1E/U=
+github.com/minio/sha256-simd v0.0.0-20190213143212-2d45a736cd16 h1:5q9a9bmgEiMJUOsQeDQj5qn/Lc0Gk1sq+or2afr124Y=
+github.com/minio/sha256-simd v0.0.0-20190213143212-2d45a736cd16/go.mod h1:2FMWW+8GMoPweT6+pI63m9YE3Lmw4J71hV56Chs1E/U=
 github.com/mitchellh/go-homedir v1.0.0 h1:vKb8ShqSby24Yrqr/yDYkuFz8d0WUjys40rvnGC8aR0=
 github.com/mitchellh/go-homedir v1.0.0/go.mod h1:SfyaCUpYCn1Vlf4IUYiD9fPX4A5wJrkLzIz1N1q0pr0=
 github.com/mr-tron/base58 v1.1.0 h1:Y51FGVJ91WBqCEabAi5OPUz38eAx8DakuAm5svLcsfQ=
