@@ -23,7 +23,7 @@ require (
 	github.com/multiformats/go-multiaddr-dns v0.2.5 // indirect
 	github.com/multiformats/go-multiaddr-net v1.7.1 // indirect
 	github.com/multiformats/go-multihash v1.0.8 // indirect
-	github.com/spaolacci/murmur3 v0.0.0-20180118202830-f09979ecbc72 // indirect
+	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/whyrusleeping/tar-utils v0.0.0-20180509141711-8c6c8ba81d5c // indirect
 	golang.org/x/crypto v0.0.0-20190103213133-ff983b9c42bc // indirect
 )
