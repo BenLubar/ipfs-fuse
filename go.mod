@@ -2,7 +2,7 @@ module github.com/BenLubar/ipfs-fuse
 
 require (
 	github.com/agl/ed25519 v0.0.0-20170116200512-5312a6153412 // indirect
-	github.com/btcsuite/btcd v0.0.0-20190115013929-ed77733ec07d // indirect
+	github.com/btcsuite/btcd 2fb0deccfd47 // indirect
 	github.com/gogo/protobuf v1.2.0 // indirect
 	github.com/gxed/hashland v0.0.0-20180221191214-d9f6b97f8db2 // indirect
 	github.com/hanwen/go-fuse v0.0.0-20190111173210-425e8d5301f6
