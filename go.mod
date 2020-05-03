@@ -5,7 +5,7 @@ require (
 	github.com/btcsuite/btcd v0.0.0-20190115013929-ed77733ec07d // indirect
 	github.com/gogo/protobuf v1.2.0 // indirect
 	github.com/gxed/hashland v0.0.0-20180221191214-d9f6b97f8db2 // indirect
-	github.com/hanwen/go-fuse v0.0.0-20190111173210-425e8d5301f6
+	github.com/hanwen/go-fuse/v2/v2 v2.0.3
 	github.com/ipfs/go-ipfs-api v1.3.5
 	github.com/ipfs/go-ipfs-cmdkit v1.1.3 // indirect
 	github.com/ipfs/go-ipfs-files v0.0.4 // indirect
